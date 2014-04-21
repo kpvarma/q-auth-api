@@ -1,28 +1,14 @@
-== README
+== Rails Authentication API - Starter Kit
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+We end up creating user model, its validations and registration / sign in APIs for every project. This is an attempt to create a starter kit.
 
-Things you may want to cover:
+Few thoughts:
 
-* Ruby version
+* Devise is an alternative for those who dont want just an API!. I like gems like devise for the reason that it ease development and reduces the time to kick start a project. At the same time it masks many things from a developers. Authentication with rails is pretty easy with the rails methods like authenticate_with_http_token
 
-* System dependencies
+* q-auth-api uses warden for authentication. (This might change in future)
 
-* Configuration
+* Uses a Global Configuration for named ConfigCenter
 
-* Database creation
+* Currently working on a client to demonstrate the API usage.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
