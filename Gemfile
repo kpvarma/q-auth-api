@@ -7,6 +7,7 @@ gem 'pg'
 gem 'thin'
 gem 'warden'
 gem 'state_machine'
+gem 'active_model_serializers', :github => 'rails-api/active_model_serializers'
 
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.1.2'
@@ -27,6 +28,20 @@ group :development do
   #gem "capistrano-deploytags"
   gem "brakeman", :require => false
   gem "hirb"
+end
+
+gem 'sass-rails'
+gem 'bootstrap-sass'
+
+group :assets do
+  gem 'coffee-rails'
+  gem 'compass-rails'
+  gem 'uglifier'
+  gem 'handlebars_assets'
+end
+
+group :development do
+  gem 'quiet_assets'
 end
 
 group :development, :test do

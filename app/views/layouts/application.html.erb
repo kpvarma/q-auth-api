@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title id="pageTitle">Q-Auth</title>
+
+    <link rel="icon" href="<%= asset_path("favicon.ico") %>" type="image/png">
+
+    <%= stylesheet_link_tag  "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+
+    <%= csrf_meta_tags %>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="content-language" content="en" />
+    <meta name="author" content="Krishnaprasad Varma" />
+    <meta name="description" content="Q-Auth Description"/>
+
+  </head>
+
+  <body>
+
+    <%= render :partial => "/layouts/header" -%>
+
+    <div id="div_flash_message" class="container">
+      <%= render :partial=>"/layouts/flash_message" -%>
+    </div>
+
+    <%= yield %>
+
+    <%= render :partial=>"/layouts/footer" -%>
+
+    <!-- Load Generic Modal -->
+    <%= render :partial=>"/layouts/overlay_generic" -%>
+
+
+
+    <script type="text/javascript">
+      <%= yield :javascript -%>
+    </script>
+
+  </body>
+
+</html>
+
+
+
+

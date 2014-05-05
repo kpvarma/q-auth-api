@@ -1,0 +1,11 @@
+<footer class="container">
+  <ul class="footer-nav list-inline">
+    <%= image_tag "icons/p2x-logo.png"%>
+    <li><%= link_to "Link 1", root_path %></li>
+    <li><%= link_to "Banks", root_path %></li>
+    <li><%= link_to "Privacy Policy", root_path, :remote => true %></li>
+    <li><%= link_to "Terms of Use", root_path, :remote => true %></li>
+    <li><a href="#" data-toggle="modal" data-target="#howItWorksModal">How It Works</a></li>
+  </ul>
+  <p class="copyright-info"> &copy; Copyright <%= Date.today.strftime("%Y") %> Qwinix Inc. All Rights Reserved.</p>
+</footer>
